@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Knuwlottie | Front-end Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="nhu.css">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="particle-bg"></canvas>
+  <canvas id="three-canvas"></canvas>
+  <!-- Portfolio Section -->
+  <header>
+    <div class="logo">
+      <span class="initials">IG:</span>
+      <span class="name">Knuwlottie</span>
+    </div>
+    <nav>
+      <ul>
+        <li class="active"><a href="#home">TRANG CHỦ</a></li>
+        <li><a href="#resume">THÔNG TIN CV</a></li>
+        <li><a href="#services">SỞ THÍCH</a></li>
+        <li><a href="#projects-section">DỰ ÁN</a></li>
+        <li><a href="#certificates-section">CHỨNG CHỈ</a></li>
+        <li><a href="#contact-section">LIÊN HỆ</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="home">
+    <section class="intro" id="intro">
+      <div class="info">
+        <p class="hello" id="hello"></p>
+        <h1 id="name"></h1>
+        <h2 id="job"></h2>
+        <div class="contact" id="contact">
+          <p><span class="icon">✉️</span> Huynhlekhanhu.kg@gmail.com</p>
+          <p><span class="icon">📞</span> 0386717549</p>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/nh%C6%B0-hu%E1%BB%B3nh-l%C3%AA-kh%E1%BA%A3-8a9271370/" target="_blank" aria-label="LinkedIn">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+            <a href="https://github.com/Knuwlottie" target="_blank" aria-label="GitHub">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+            <a href="https://www.facebook.com/share/16AXtoAvif/?mibextid=wwXIfr" target="_blank" aria-label="Facebook">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+            <a href="https://www.instagram.com/knuwlottie/" target="_blank" aria-label="Instagram">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="avata" title="Ảnh đại diện">
+        <img src="avata.jpg" alt="Khả Như">
+      </div>
+    </section>
+  </main>
+  <!-- CV Sections -->
+  <section id="resume" role="main" aria-label="Sơ yếu lý lịch của Huỳnh Lê Khả Như">
+    <!-- Introduction -->
+    <div class="cv-section" id="intro-section">
+      <div class="cv-section-header">
+        <ion-icon name="person-outline"></ion-icon>
+        <h3>GIỚI THIỆU</h3>
+      </div>
+      <div class="cv-section-content">
+        <div class="intro-header">
+          <div class="intro-left">
+            <div class="profile-img-container">
+              <img src="khanhu.jpg" alt="Ảnh hồ sơ của Huỳnh Lê Khả Như">
+            </div>
+          </div>
+          <div class="intro-right">
+            <h1 class="name">HUỲNH LÊ KHẢ NHƯ</h1>
+            <p class="title">Front-end Developer</p>
+            <p class="description">
+              Tôi là Khả Như, một nhà phát triển giao diện người dùng (UI Developer) đầy tiềm năng với nền tảng thiết kế vững chắc và gu thẩm mỹ tốt. Tôi có kỹ năng vẽ phác thảo và hình dung ý tưởng UI/UX một cách rõ ràng. Tôi đam mê biến những ý tưởng sáng tạo thành các giao diện trực quan và thân thiện với người dùng. Tôi luôn nỗ lực kết hợp hài hòa giữa thiết kế và công nghệ để tạo ra những trải nghiệm người dùng tốt nhất. Bên cạnh đó, tôi tự tin vào khả năng giao tiếp của mình nhờ kinh nghiệm làm việc trong lĩnh vực telesales tại một trường cao đẳng và chăm sóc khách hàng tại một thương hiệu lớn.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Education -->
+    <div class="cv-section" id="education-section">
+      <div class="cv-section-header">
+        <ion-icon name="school-outline"></ion-icon>
+        <h3>HỌC VẤN</h3>
+      </div>
+      <div class="cv-section-content">
+        <div class="edu-exp-item">
+          <span class="date">2023 - 2027</span>
+          <strong>Đại học Giao thông Vận tải TP.HCM</strong>
+          <span>Công nghệ Thông tin</span>
+        </div>
+      </div>
+    </div>
+    <!-- Skills -->
+    <div class="cv-section" id="skills-section">
+      <div class="cv-section-header">
+        <ion-icon name="star-outline"></ion-icon>
+        <h3>KỸ NĂNG</h3>
+      </div>
+      <div class="cv-section-content">
+        <div class="skill">
+          <div class="skill-name">Phát Triển Giao Diện Web</div>
+          <div class="skill-bar-container" role="progressbar" aria-label="Kỹ năng phát triển giao diện web 75 phần trăm" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+            <div class="skill-bar" data-width="75%"></div>
+          </div>
+          <div class="skill-percent">75%</div>
+        </div>
+        <div class="skill">
+          <div class="skill-name">Phát Triển Phần Mềm</div>
+          <div class="skill-bar-container" role="progressbar" aria-label="Kỹ năng phát triển phần mềm 70 phần trăm" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+            <div class="skill-bar" data-width="70%"></div>
+          </div>
+          <div class="skill-percent">70%</div>
+        </div>
+        <div class="skill">
+          <div class="skill-name">UI/UX</div>
+          <div class="skill-bar-container" role="progressbar" aria-label="Kỹ năng UI/UX 75 phần trăm" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+            <div class="skill-bar" data-width="75%"></div>
+          </div>
+          <div class="skill-percent">75%</div>
+        </div>
+        <div class="skill">
+          <div class="skill-name">Tư Duy Thiết Kế</div>
+          <div class="skill-bar-container" role="progressbar" aria-label="Kỹ năng tư duy thiết kế 80 phần trăm" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+            <div class="skill-bar" data-width="80%"></div>
+          </div>
+          <div class="skill-percent">80%</div>
+        </div>
+        <div class="skill">
+          <div class="skill-name">Giao Tiếp Tự Tin & Sáng Tạo</div>
+          <div class="skill-bar-container" role="progressbar" aria-label="Kỹ năng giao tiếp tự tin và sáng tạo 85 phần trăm" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+            <div class="skill-bar" data-width="85%"></div>
+          </div>
+          <div class="skill-percent">85%</div>
+        </div>
+      </div>
+    </div>
+    
+  <!-- Khung tiêu đề SỞ THÍCH -->
+<div class="cv-section hobby-title-section" id="services">
+  <div class="cv-section-header">
+    <ion-icon name="heart-outline"></ion-icon>
+    <h3>SỞ THÍCH</h3>
+  </div>
+</div>
+<div class="hobbies-row-separated">
+  <div class="hobby-box-separated">
+    <span class="hobby-icon hobby-music hobby-icon-glow"><ion-icon name="musical-notes-outline"></ion-icon></span>
+    <div class="hobby-title">Âm nhạc</div>
+  </div>
+  <div class="hobby-box-separated">
+    <span class="hobby-icon hobby-book hobby-icon-glow"><ion-icon name="book-outline"></ion-icon></span>
+    <div class="hobby-title">Đọc sách</div>
+  </div>
+  <div class="hobby-box-separated">
+    <span class="hobby-icon hobby-travel hobby-icon-glow"><ion-icon name="globe-outline"></ion-icon></span>
+    <div class="hobby-title">Du lịch</div>
+  </div>
+  <div class="hobby-box-separated">
+    <span class="hobby-icon hobby-art hobby-icon-glow"><ion-icon name="color-palette-outline"></ion-icon></span>
+    <div class="hobby-title">Vẽ</div>
+  </div>
+  <div class="hobby-box-separated">
+    <span class="hobby-icon hobby-design hobby-icon-glow"><ion-icon name="build-outline"></ion-icon></span>
+    <div class="hobby-title">Thiết kế</div>
+  </div>
+</div>
+
+
+    <!-- Projects -->
+    <div class="cv-section" id="projects-section">
+      <div class="cv-section-header">
+        <ion-icon name="code-slash-outline"></ion-icon>
+        <h3>DỰ ÁN</h3>
+      </div>
+      <div class="cv-section-content" style="display: flex; gap: 32px; flex-wrap: nowrap; justify-content: center;">
+        <div class="edu-exp-item" style="flex: 1 1 320px; min-width: 280px; max-width: 400px; background: rgba(255,255,255,0.07); border-radius: 16px; padding: 24px; margin-bottom: 0; box-shadow: 0 2px 12px rgba(0,0,0,0.10);">
+          <span class="date">2024 - 2025</span>
+          <strong>Hệ Thống Quản Lý Đặt Vé</strong>
+          <span>Vai trò: Front-end Developer <br>- Thiết kế và phát triển giao diện người dùng dựa trên Java Swing để đặt và quản lý vé.<br>- Triển khai các tính năng như đăng ký người dùng, đăng nhập, chọn ghế, xác nhận vé và theo dõi lịch sử.</span>
+        </div>
+        <div class="edu-exp-item" style="flex: 1 1 320px; min-width: 280px; max-width: 400px; background: rgba(255,255,255,0.07); border-radius: 16px; padding: 24px; margin-bottom: 0; box-shadow: 0 2px 12px rgba(0,0,0,0.10);">
+          <span class="date">2025 - Hiện tại</span>
+          <strong>Web Order Đồ Ăn</strong>
+          <span>Vai trò: Front-end Developer<br>- Thiết kế và xây dựng giao diện web cho hệ thống đặt món ăn.<br>- Sử dụng HTML, CSS, JavaScript để tạo trải nghiệm người dùng mượt mà.<br>- Đang phát triển thêm các tính năng đặt hàng, thanh toán và quản lý thực đơn.</span>
+        </div>
+        <div class="edu-exp-item" style="flex: 1 1 320px; min-width: 280px; max-width: 400px; background: rgba(255,255,255,0.07); border-radius: 16px; padding: 24px; margin-bottom: 0; box-shadow: 0 2px 12px rgba(0,0,0,0.10);">
+          <span class="date">2023</span>
+          <strong>Quản Lý Chi Tiêu</strong>
+          <span>Vai trò: Lập Trình viên Full stack <br>- Xây dựng ứng dụng quản lý chi tiêu cá nhân.<br>- Cho phép thêm, sửa, xóa các khoản thu chi, thống kê theo tháng.<br>- Sử dụng HTML, CSS, JavaScript và lưu trữ dữ liệu local.</span>
+        </div>
+      </div>
+    </div>
+    <!-- Certificates -->
+    <div class="cv-section" id="certificates-section">
+      <div class="cv-section-header">
+        <ion-icon name="ribbon-outline"></ion-icon>
+        <h3>CHỨNG CHỈ</h3>
+      </div>
+      <div class="cv-section-content">
+        <div class="edu-exp-item">
+          <strong>Tin học văn phòng loại Giỏi</strong>
+          <span>Đã đạt chứng chỉ Tin học văn phòng loại Giỏi.<br>
+          Hiện tại, tôi đang tiếp tục học tập và phát triển để lấy thêm các chứng chỉ về thiết kế và lập trình trong tương lai.</span>
+        </div>
+      </div>
+    </div>
+    <!-- Experience -->
+    <div class="cv-section" id="experience-section">
+      <div class="cv-section-header">
+        <ion-icon name="briefcase-outline"></ion-icon>
+        <h3>KINH NGHIỆM LÀM VIỆC</h3>
+      </div>
+      <div class="cv-section-content">
+        <div class="edu-exp-item">
+          <span class="date">Tháng 11/2023 – Tháng 8/2024, Tháng 12/2024 – Hiện tại</span>
+          <strong>Cộng Tác Viên Telesales – Cao đẳng Kỹ thuật và Du lịch Sài Gòn (STC)</strong>
+          <span>
+            - Thực hiện các cuộc gọi tư vấn cho học viên tiềm năng<br>
+            - Thu thập và quản lý thông tin khách hàng<br>
+            - Nhập dữ liệu vào hệ thống
+          </span>
+        </div>
+        <div class="edu-exp-item">
+          <span class="date"></span>
+          <strong>Chăm Sóc Khách Hàng – Công ty Cổ phần Công nghệ Tplus</strong>
+          <span>
+            - Cung cấp dịch vụ hỗ trợ và tư vấn khách hàng<br>
+            - Giải đáp thắc mắc và xử lý phản hồi<br>
+            - Làm việc với hệ thống CRM nội bộ
+          </span>
+        </div>
+      </div>
+    </div>
+    <!-- Contact -->
+    <div class="cv-section" id="contact-section">
+      <div class="cv-section-header">
+        <ion-icon name="mail-outline"></ion-icon>
+        <h3>LIÊN HỆ</h3>
+      </div>
+      <div class="cv-section-content" style="display: flex; gap: 32px; flex-wrap: wrap; justify-content: center; align-items: flex-start;">
+        <!-- Khung thông tin liên hệ -->
+        <div class="contact-info-box" style="flex: 1 1 340px; min-width: 300px; max-width: 420px; background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%); border-radius: 16px; padding: 36px 32px; margin-bottom: 0; box-shadow: 0 2px 16px rgba(0,0,0,0.10); display: flex; flex-direction: column; align-items: center; justify-content: center;">
+          <h2 style="color: #fff; font-size: 2rem; font-weight: bold; margin-bottom: 18px; text-align: center;">Tìm tôi ↘</h2>
+          <div style="color: #fff; font-size: 1.1rem; margin-bottom: 12px; display: flex; align-items: center; gap: 8px;"><ion-icon name="mail-outline"></ion-icon> Email: <span style="font-weight: 500;">huynhlekhanhu.kg@gmail.com</span></div>
+          <div style="color: #fff; font-size: 1.1rem; margin-bottom: 24px; display: flex; align-items: center; gap: 8px;"><ion-icon name="call-outline"></ion-icon> Số điện thoại: <span style="font-weight: 500;">+84 386717549</span></div>
+          <div style="display: flex; gap: 24px; margin-top: 12px;">
+            <a href="https://github.com/Knuwlottie" target="_blank" style="color: #fff; border: 2px solid #fff; border-radius: 50%; width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem;"><ion-icon name="logo-github"></ion-icon></a>
+            <a href="https://www.facebook.com/share/16AXtoAvif/?mibextid=wwXIfr" target="_blank" style="color: #fff; border: 2px solid #fff; border-radius: 50%; width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem;"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="https://www.instagram.com/knuwlottie/" target="_blank" style="color: #fff; border: 2px solid #fff; border-radius: 50%; width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem;"><ion-icon name="logo-instagram"></ion-icon></a>
+          </div>
+        </div>
+        <!-- Form liên hệ -->
+        <form class="contact-form-box" style="flex: 2 1 400px; min-width: 320px; max-width: 700px; background: transparent; border-radius: 16px; padding: 16px 0 0 0; display: flex; flex-direction: column; gap: 18px; align-items: stretch; justify-content: flex-start;">
+          <div style="display: flex; gap: 16px;">
+            <input type="text" placeholder="Tên" name="name" style="flex: 1; padding: 14px 12px; border: 2px solid #bdbdbd; border-radius: 8px; font-size: 1rem; outline: none;">
+            <input type="email" placeholder="Email" name="email" style="flex: 1; padding: 14px 12px; border: 2px solid #bdbdbd; border-radius: 8px; font-size: 1rem; outline: none; max-width: 180px;">
+          </div>
+          <textarea placeholder="Tin nhắn" name="message" rows="6" style="padding: 14px 12px; border: 2px solid #bdbdbd; border-radius: 8px; font-size: 1rem; outline: none; resize: vertical;"></textarea>
+          <button type="submit" style="align-self: flex-end; background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%); color: #fff; border: none; border-radius: 10px; padding: 12px 32px; font-size: 1.1rem; font-weight: 600; cursor: pointer; display: flex; align-items: center; gap: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); transition: background 0.2s;">Gửi <ion-icon name="send-outline"></ion-icon></button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="nhu.js"></script>
+</body>
+</html>
